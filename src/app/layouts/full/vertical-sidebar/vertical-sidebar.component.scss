@@ -1,0 +1,52 @@
+
+.dotBlue {
+  height: 10px;
+  width: 10px;
+  background-color: #6b7a8f;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotBlack {
+  height: 10px;
+  width: 10px;
+  background-color: #424242;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotYellow {
+  height: 10px;
+  width: 10px;
+  background-color: #b37d4e;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotGreen {
+  height: 10px;
+  width: 10px;
+  background-color: #578c90;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+.dotRed {
+  height: 10px;
+  width: 10px;
+  background-color: #cd5360;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.aligned-with-icon{
+  padding-left:5px;
+  font-size: small;
+  color:white;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

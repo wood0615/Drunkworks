@@ -1,0 +1,23 @@
+
+<div>
+  <a [routerLink]="['/']" style="cursor: pointer;">
+    Home
+  </a>
+</div>
+<mat-card class="example-card" *ngFor="let item of this.brewhausservice.brewhausDetail">
+  <mat-card-header>
+    
+    <mat-card-title>{{item.name}}</mat-card-title>
+    <mat-card-subtitle>{{item.description}}</mat-card-subtitle>
+  </mat-card-header>
+  
+  <mat-card-content style="display: flex; flex-direction: row;">
+    <div style="display: flex; flex-direction: column; height: 80%">
+    <a [routerLink]="['brewhausdetails']" style="cursor: pointer; height: 80%">
+        <img mat-card-image style="height: 10%; width: 10%; object-fit: cover!important" src="{{item.image_url}}">
+      </a>
+    </div>
+    Goes With: <div *ngFor="let fp of item.food_pairing" class="dr-col-1">{{fp}}</div>
+  </mat-card-content>
+
+</mat-card>
